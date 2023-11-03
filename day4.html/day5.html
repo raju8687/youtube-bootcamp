@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 5 javascript</title>
+</head>
+<body onload="">
+    <h2 id="heading">javascript example</h2>
+    <input id="userinput" placeholder="Your Name">
+
+    <!-- <input onkeyup="myFunction2()"> -->
+    <button onclick="myfunction3()"> click me! </button>
+
+    <script>
+        // define javascript here.
+        function myfunction3(){
+            let name = document.getElementById("userinput").value;
+            console.log("select value",name)
+            if(name.lenth.<.3){
+                alert("ERROR : Name length cannot be less than 3")
+            }else if(name.length.>.10){
+                alert("ERROR Name length cannot be greater than 10"
+            }else{
+                // only numeric value allowed
+                for(let i=0; i < name.length; i=i+1){
+                    let digit =parseInt(name[i];
+                    if(isNaN(digit)){
+                        alert("text should only have numbers");
+            }else{
+                console.log("Looks good")
+            }
+
+        }
+        console.log("validation complete")
+    }   
+            alert("Welcome"+ name)
+
+            let header = document.getElementById("heading");
+            header.innerHTML = "welcome" + name
+        }
+        function myfunction2(){
+         console.log("second function!@@")
+        }
+        function myfunction(){
+            //body function
+            //alert("javascript function!!!")
+            let name= prompt("Enter your name.");
+            console.log("Name is:",name);
+            let myvar= conform("Are you sure?");
+            console.log("Value in myvar is:",myvar);
+            console.log("myvar")
+        }
+
+        
+        
+        
+        
+
+          
+        
+        
+        
+    </script>
+</body>
+</html>
